@@ -11,8 +11,8 @@ public class Bewertung {
 
 	/**
 	 * Ist der Konstruktor zum Bewertungs Objekt
-	 * @param bewertung		ist eine double variable die eine Bewertung darstellen soll
-	 * @param anmerkung		ist ist ein String in dem eine Anmerkung stehen soll
+	 * @param bewertung	ist eine double variable die eine Bewertung darstellen soll
+	 * @param anmerkung	ist ist ein String in dem eine Anmerkung stehen soll
 	 */
 	public Bewertung(double bewertung, String anmerkung) {
 		this.bewertung = bewertung;
@@ -20,15 +20,15 @@ public class Bewertung {
 	}
 	
 	/**
-	 * Ist der Setter für die Bewertung
-	 * @param wert 		ist eine double Variable die den Wert representiert
+	 * Ist der Setter fÃ¼r die Bewertung
+	 * @param wert 	ist eine double Variable die den Wert representiert
 	 */
 	public void setBewertung(double wert) {
 		this.bewertung = wert;
 	}
 	
 	/**
-	 * Ist der Setter für die Variable Anmerkung
+	 * Ist der Setter fÃ¼r die Variable Anmerkung
 	 * @param anmerkung 	ist ein String der eine Anmerkung representieren soll
 	 */
 	public void setAnmerkung(String anmerkung) {
@@ -36,16 +36,16 @@ public class Bewertung {
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Variable Bewertung
-	 * @return gibt die Bewertung zurück
+	 * Ist die Getter-Methode fÃ¼r die Variable Bewertung
+	 * @return gibt die Bewertung zurÃ¼ck
 	 */
 	public double getBewertung() {
 		return bewertung;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Variable Anmerkung
-	 * @return gibt die Anmerkung zurück
+	 * Ist die Getter-Methode fÃ¼r die Variable Anmerkung
+	 * @return gibt die Anmerkung zurÃ¼ck
 	 */
 	public String getAnmerkung() {
 		return anmerkung;
@@ -53,7 +53,7 @@ public class Bewertung {
 	
 	/**
 	 * Fasst alle Argumente des Produktes in ein String zusammen
-	 * @return	Es gibt alle Daten in einem String zurück
+	 * @return	Es gibt alle Daten in einem String zurÃ¼ck
 	 */
 	@Override
 	public String toString() {
@@ -62,9 +62,9 @@ public class Bewertung {
 	}
 	
 	/**
-	 * 	Diese Methode vergleicht die Atribute der rübergegebenen Bewertung mit der der jetzigem
-	 * @param b		ist das Bewertung Objekt
-	 * @return	gibt zurück ob die beiden Bewertungen übereinstimmen
+	 * 	Diese Methode vergleicht die Atribute der rÃ¼bergegebenen Bewertung mit der der jetzigem
+	 * @param b	ist das Bewertung Objekt
+	 * @return	gibt zurÃ¼ck ob die beiden Bewertungen Ã¼bereinstimmen
 	 */
 	public boolean equals(Bewertung b) {
 		/*
@@ -77,7 +77,7 @@ public class Bewertung {
 		
 		/*
 		 * 2.Schritt	wir schauen ob das Objekt existiert
-		 * Falls nein können wie direkt false zurückgeben
+		 * Falls nein kÃ¶nnen wie direkt false zurÃ¼ckgeben
 		 */
 		if(b == null) {
 			return false;
@@ -85,8 +85,8 @@ public class Bewertung {
 		
 		/*
 		 * 3.Schritt	 wir vergleichen ob die Klassen gleich sind
-		 * Falls die Klassen nicht gleich sind kann man direkt false zurückgeben
-		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden können
+		 * Falls die Klassen nicht gleich sind kann man direkt false zurÃ¼ckgeben
+		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden kÃ¶nnen
 		 */
 		if(getClass() != b.getClass()) {
 			return false;
@@ -97,7 +97,7 @@ public class Bewertung {
 	}
 	
 	/**
-	 * Diese Methode gibt den HashCode ausgerechnet durch die Formel zurück
+	 * Diese Methode gibt den HashCode ausgerechnet durch die Formel zurÃ¼ck
 	 */
 	@Override
 	public int hashCode() {
