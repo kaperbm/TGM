@@ -20,24 +20,24 @@ public class Produkt {
 	
 	/**
 	 * Ist der Konstuktor zum Produkt
-	 * @param ProduktID 	ist die ID des Produktes
-	 * @param Beizeichnung 	ist die Bezeichnung des Produktes
-	 * @param Beschreibung 	ist die Beschreibung des Produktes
-	 * @param Preis 		ist der Preis des Produktes
-	 * @throws NumericRangeException	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * @param ProduktID 			ist die ID des Produktes
+	 * @param Beizeichnung 			ist die Bezeichnung des Produktes
+	 * @param Beschreibung 			ist die Beschreibung des Produktes
+	 * @param Preis 			ist der Preis des Produktes
+	 * @throws NumericRangeException	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public Produkt(long ProduktID, String Bezeichnung, String Beschreibung, double Preis) throws NumericRangeException {
-		String IDString = ProduktID + "";	// Ist für das Kontrollieren der ID da
-		int laenge = 0;						// Ist für das Kontrollieren der Bezeichnung da
+		String IDString = ProduktID + "";	// Ist fÃ¼r das Kontrollieren der ID da
+		int laenge = 0;				// Ist fÃ¼r das Kontrollieren der Bezeichnung da
 		
 		if(IDString.length() > 6) {
 			this.ProduktID = ProduktID;
 		}
 		else {
-			throw new NumericRangeException("Die ID muss minimum 7 Stellen aufweisen!+");	// Die Exception wird geworfen falls die länge kürzer ist als 7
+			throw new NumericRangeException("Die ID muss minimum 7 Stellen aufweisen!+");	// Die Exception wird geworfen falls die lÃ¤nge kÃ¼rzer ist als 7
 		}
 		/*
-		 * Der Produkt-Parameter wird kontroliert und bei Fähler trifft eine Exception auf
+		 * Der Produkt-Parameter wird kontroliert und bei FÃ¤hler trifft eine Exception auf
 		 */
 		
 		if(Bezeichnung != null) {
@@ -51,7 +51,7 @@ public class Produkt {
 						}
 					}
 					else {
-						throw new IllegalArgumentException("Es dürfen in der Bezeichnung keine Leerzeichen vorkommen!");	// Die Exception wird geworfen falls die Leerzeichen im Parameter vorkommen
+						throw new IllegalArgumentException("Es dÃ¼rfen in der Bezeichnung keine Leerzeichen vorkommen!");	// Die Exception wird geworfen falls die Leerzeichen im Parameter vorkommen
 					}
 				}
 			}
@@ -60,7 +60,7 @@ public class Produkt {
 			}
 		}
 		/*
-		 * Der Bezeichnung-Parameter wird kontroliert und bei Fähler trifft eine Exception auf
+		 * Der Bezeichnung-Parameter wird kontroliert und bei FÃ¤hler trifft eine Exception auf
 		 */
 		
 		if(Beschreibung != null) {
@@ -70,37 +70,37 @@ public class Produkt {
 			throw new IllegalArgumentException("Die Beschreibung darf nicht leer sein!");		// Die Exception wird geworfen falls der Parameter leer ist
 		}
 		/*
-		 * Der Beschreibung-Parameter wird kontroliert und bei Fähler trifft eine Exception auf
+		 * Der Beschreibung-Parameter wird kontroliert und bei FÃ¤hler trifft eine Exception auf
 		 */
 		
 		if(Preis >= 0) {
 		this.Preis = Preis;
 		}
 		else {
-			throw new NumericRangeException("Der Preis darf nicht negativ sein");				// Die Exception wird geworfen falls der Parameter negativ ist
+			throw new NumericRangeException("Der Preis darf nicht negativ sein");			// Die Exception wird geworfen falls der Parameter negativ ist
 		}
 		/*
-		 * Der Preis-Parameter wird kontroliert und bei Fähler trifft eine Exception auf
+		 * Der Preis-Parameter wird kontroliert und bei FÃ¤hler trifft eine Exception auf
 		 */
 	}
 	
 	/**
-	 * Gibt einen Gesamtpreis zurück
-	 * @param stueckZahl	Ist die Stückanzahl die rübergegeben wurde
-	 * @return 				Gibt den umgerechneten Preis zurück
+	 * Gibt einen Gesamtpreis zurÃ¼ck
+	 * @param stueckZahl	Ist die StÃ¼ckanzahl die rÃ¼bergegeben wurde
+	 * @return 		Gibt den umgerechneten Preis zurÃ¼ck
 	 */
 	public double gesamtPreis(int stueckZahl) {
 		if(stueckZahl >=0) {
 			return stueckZahl * Preis;
 		}
 		else {
-			throw new IllegalArgumentException("Es darf keine negative Anzahl an Stücken rübergegeben werden");	// Die Exception wird geworfen falls der Parameter im negativen Bereich ist
+			throw new IllegalArgumentException("Es darf keine negative Anzahl an StÃ¼cken rÃ¼bergegeben werden");	// Die Exception wird geworfen falls der Parameter im negativen Bereich ist
 		}
 	}
 	
 	/**
 	 * Fasst alle Argumente des Produktes in ein String zusammen
-	 * @return	Es gibt alle Daten in einem String zurück
+	 * @return	Es gibt alle Daten in einem String zurÃ¼ck
 	 */
 	@Override
 	public String toString() {
@@ -109,23 +109,23 @@ public class Produkt {
 	}
 	
 	/**
-	 * Ist der Setter für den Preis
+	 * Ist der Setter fÃ¼r den Preis
 	 * @param Preis	Ist der neue Preis
-	 * @throws NumericRangeException 	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * @throws NumericRangeException 	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public void setPreis( double Preis) throws NumericRangeException {
 		if(Preis >= 0) {
 			this.Preis = Preis;
 			}
 			else {
-				throw new NumericRangeException("Der Preis darf nicht negativ sein");				// Die Exception wird geworfen falls der Parameter negativ ist
+				throw new NumericRangeException("Der Preis darf nicht negativ sein");	// Die Exception wird geworfen falls der Parameter negativ ist
 			}
 	}
 	
 	/**
-	 * Ist der Setter für die Bezeichnung
+	 * Ist der Setter fÃ¼r die Bezeichnung
 	 * @param Bezeichnung	Ist die neue Bezeichnung
-	 * @throws NumericRangeException 	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * @throws NumericRangeException   Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public void setBezeichnung(String Bezeichnung) throws NumericRangeException {
 		int laenge = 0;
@@ -140,7 +140,7 @@ public class Produkt {
 						}
 					}
 					else {
-						throw new IllegalArgumentException("Es dürfen in der Bezeichnung keine Leerzeichen vorkommen!");	// Die Exception wird geworfen falls die Leerzeichen im Parameter vorkommen
+						throw new IllegalArgumentException("Es dÃ¼rfen in der Bezeichnung keine Leerzeichen vorkommen!");	// Die Exception wird geworfen falls die Leerzeichen im Parameter vorkommen
 					}
 				}
 			}
@@ -151,72 +151,72 @@ public class Produkt {
 	}
 	
 	/**
-	 * Ist der Setter für die Beschreibung
+	 * Ist der Setter fÃ¼r die Beschreibung
 	 * @param Beschreibung	Ist die neue Beschreibung
-	 * @throws NumericRangeException 	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * @throws NumericRangeException 	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public void setBeschreibung( String Beschreibung) throws NumericRangeException {
 		if(Beschreibung != null) {
 			this.Beschreibung = Beschreibung;
 		}
 		else {
-			throw new IllegalArgumentException("Die Beschreibung darf nicht leer sein!");				// Die Exception wird geworfen falls der Parameter leer ist
+			throw new IllegalArgumentException("Die Beschreibung darf nicht leer sein!");		// Die Exception wird geworfen falls der Parameter leer ist
 		}
 	}
 	
 	/**
-	 * Ist der Setter für die ProduktID
-	 * @param ProduktID	Ist die neue ProduktID
-	 * @throws NumericRangeException 	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * Ist der Setter fÃ¼r die ProduktID
+	 * @param ProduktID			Ist die neue ProduktID
+	 * @throws NumericRangeException 	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public void setProduktID( int ProduktID) throws NumericRangeException {
-		String IDString = ProduktID + "";	// Ist für das Kontrollieren der ID da
-		int laenge = 0;						// Ist für das Kontrollieren der Bezeichnung da
+		String IDString = ProduktID + "";	// Ist fÃ¼r das Kontrollieren der ID da
+		int laenge = 0;				// Ist fÃ¼r das Kontrollieren der Bezeichnung da
 		
 		if(IDString.length() > 6) {
 			this.ProduktID = ProduktID;
 		}
 		else {
-			throw new NumericRangeException("Die ID muss minimum 7 Stellen aufweisen!+");	// Die Exception wird geworfen falls die länge kürzer ist als 7
+			throw new NumericRangeException("Die ID muss minimum 7 Stellen aufweisen!+");	// Die Exception wird geworfen falls die lÃ¤nge kÃ¼rzer ist als 7
 		}
 	}
 	
 	 /**
-	  * Ist die Getter-Methode für den Preis
-	  * @return	Gibt den Preis des Produktes zurück
+	  * Ist die Getter-Methode fÃ¼r den Preis
+	  * @return	Gibt den Preis des Produktes zurÃ¼ck
 	  */
 	public double getPreis() {
 		return Preis;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Beschreibung
-	 * @return	Gibt die Beschreibung des Produktes zurück
+	 * Ist die Getter-Methode fÃ¼r die Beschreibung
+	 * @return	Gibt die Beschreibung des Produktes zurÃ¼ck
 	 */
 	public String getBeschreibung() {
 		return Beschreibung;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Bezeichnung
-	 * @return	Gibt die Beschreibung des Produktes zurück
+	 * Ist die Getter-Methode fÃ¼r die Bezeichnung
+	 * @return	Gibt die Beschreibung des Produktes zurÃ¼ck
 	 */
 	public String getBezeichnung() {
 		return Bezeichnung;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die ID
-	 * @return Gibt die ProduktID zurück
+	 * Ist die Getter-Methode fÃ¼r die ID
+	 * @return Gibt die ProduktID zurÃ¼ck
 	 */
 	public long getProduktID() {
 		return ProduktID;
 	}
 	
 	/**
-	 * Vergleicht die Atribute des rübergegebenen Produktes mit den des jetzigem
+	 * Vergleicht die Atribute des rÃ¼bergegebenen Produktes mit den des jetzigem
 	 * @param p 	Ist das Produkt welches mit diesem verglichen wird
-	 * @return 	Gibt zurück ob beide Produkte identisch sind oder nicht
+	 * @return 	Gibt zurÃ¼ck ob beide Produkte identisch sind oder nicht
 	 */
 	public boolean equals(Produkt p) {
 		/*
@@ -229,7 +229,7 @@ public class Produkt {
 		
 		/*
 		 * 2.Schritt	wir schauen ob das Objekt existiert
-		 * Falls nein können wie direkt false zurückgeben
+		 * Falls nein kÃ¶nnen wie direkt false zurÃ¼ckgeben
 		 */
 		if(p == null) {
 			return false;
@@ -237,8 +237,8 @@ public class Produkt {
 		
 		/*
 		 * 3.Schritt	 wir vergleichen ob die Klassen gleich sind
-		 * Falls die Klassen nicht gleich sind kann man direkt false zurückgeben
-		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden können
+		 * Falls die Klassen nicht gleich sind kann man direkt false zurÃ¼ckgeben
+		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden kÃ¶nnen
 		 */
 		if(getClass() != p.getClass()) {
 			return false;
@@ -246,7 +246,7 @@ public class Produkt {
 		
 		/*
 		 *  4.Schritt	wir konventieren den Typ um
-		 *  dies ist dazu da, damit wir auf die Atribute und Methoden zugreifen können
+		 *  dies ist dazu da, damit wir auf die Atribute und Methoden zugreifen kÃ¶nnen
 		 */
 		Produkt produkt = (Produkt) p;
 		
@@ -257,7 +257,7 @@ public class Produkt {
 	}
 	
 	/**
-	 * Gibt den HashCode ausgerechnet durch die Formel zurück
+	 * Gibt den HashCode ausgerechnet durch die Formel zurÃ¼ck
 	 */
 	@Override
 	public int hashCode() {
