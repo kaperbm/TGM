@@ -1,6 +1,7 @@
 package src;
 /**
  * Ist die Bewertungs Klasse
+ * Sie beinhaltet schon alle Inhalte der Aufgabe E 4b.1.1 equals und hashcode richtig überschreiben
  * @author Kacper Bohaczyk
  * @date 10.3.2022
  */
