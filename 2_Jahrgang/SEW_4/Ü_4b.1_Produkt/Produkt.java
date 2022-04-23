@@ -20,7 +20,7 @@ public class Produkt {
 	 * @param ProduktID 	ist die ID des Produktes
 	 * @param Beizeichnung 	ist die Bezeichnung des Produktes
 	 * @param Beschreibung 	ist die Beschreibung des Produktes
-	 * @param Preis 		ist der Preis des Produktes
+	 * @param Preis 	ist der Preis des Produktes
 	 */
 	public Produkt(long ProduktID, String Bezeichnung, String Beschreibung, double Preis) {
 		this.ProduktID = ProduktID;
@@ -30,9 +30,9 @@ public class Produkt {
 	}
 	
 	/**
-	 * Gibt einen Gesamtpreis zurück
-	 * @param stueckZahl		Ist die Stückanzahl die rübergegeben wurde
-	 * @return 		Gibt den umgerechneten Preis zurück
+	 * Gibt einen Gesamtpreis zurÃ¼ck
+	 * @param stueckZahl	Ist die StÃ¼ckanzahl die rÃ¼bergegeben wurde
+	 * @return 		Gibt den umgerechneten Preis zurÃ¼ck
 	 */
 	public double gesamtPreis(int stueckZahl) {
 		return stueckZahl * Preis;
@@ -40,7 +40,7 @@ public class Produkt {
 	
 	/**
 	 * Fasst alle Argumente des Produktes in ein String zusammen
-	 * @return	Es gibt alle Daten in einem String zurück
+	 * @return	Es gibt alle Daten in einem String zurÃ¼ck
 	 */
 	@Override
 	public String toString() {
@@ -49,15 +49,15 @@ public class Produkt {
 	}
 	
 	/**
-	 * Ist der Setter für den Preis
-	 * @param Preis		Ist der neue Preis
+	 * Ist der Setter fÃ¼r den Preis
+	 * @param Preis	Ist der neue Preis
 	 */
 	public void setPreis( double Preis) {
 		this.Preis = Preis;
 	}
 	
 	/**
-	 * Ist der Setter für die Bezeichnung
+	 * Ist der Setter fÃ¼r die Bezeichnung
 	 * @param Bezeichnung	Ist die neue Bezeichnung
 	 */
 	public void setBezeichnung( String Bezeichnung) {
@@ -65,7 +65,7 @@ public class Produkt {
 	}
 	
 	/**
-	 * Ist der Setter für die Beschreibung
+	 * Ist der Setter fÃ¼r die Beschreibung
 	 * @param Beschreibung	Ist die neue Beschreibung
 	 */
 	public void setBeschreibung( String Beschreibung) {
@@ -73,49 +73,49 @@ public class Produkt {
 	}
 	
 	/**
-	 * Ist der Setter für die ProduktID
-	 * @param ProduktID		Ist die neue ProduktID
+	 * Ist der Setter fÃ¼r die ProduktID
+	 * @param ProduktID	Ist die neue ProduktID
 	 */
 	public void setProduktID( int ProduktID) {
 		this.ProduktID = ProduktID;
 	}
 	
 	 /**
-	  * Ist die Getter-Methode für den Preis
-	  * @return		Gibt den Preis des Produktes zurück
+	  * Ist die Getter-Methode fÃ¼r den Preis
+	  * @return	Gibt den Preis des Produktes zurÃ¼ck
 	  */
 	public double getPreis() {
 		return Preis;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Beschreibung
-	 * @return		Gibt die Beschreibung des Produktes zurück
+	 * Ist die Getter-Methode fÃ¼r die Beschreibung
+	 * @return	Gibt die Beschreibung des Produktes zurÃ¼ck
 	 */
 	public String getBeschreibung() {
 		return Beschreibung;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die Bezeichnung
-	 * @return		Gibt die Beschreibung des Produktes zurück
+	 * Ist die Getter-Methode fÃ¼r die Bezeichnung
+	 * @return	Gibt die Beschreibung des Produktes zurÃ¼ck
 	 */
 	public String getBezeichnung() {
 		return Bezeichnung;
 	}
 	
 	/**
-	 * Ist die Getter-Methode für die ID
-	 * @return Gibt die ProduktID zurück
+	 * Ist die Getter-Methode fÃ¼r die ID
+	 * @return Gibt die ProduktID zurÃ¼ck
 	 */
 	public long getProduktID() {
 		return ProduktID;
 	}
 	
 	/**
-	 * Vergleicht die Atribute des rübergegebenen Produktes mit den des jetzigem
-	 * @param p 		Ist das Produkt welches mit diesem verglichen wird
-	 * @return 			Gibt zurück ob beide Produkte identisch sind oder nicht
+	 * Vergleicht die Atribute des rÃ¼bergegebenen Produktes mit den des jetzigem
+	 * @param p 	Ist das Produkt welches mit diesem verglichen wird
+	 * @return 	Gibt zurÃ¼ck ob beide Produkte identisch sind oder nicht
 	 */
 	public boolean equals(Produkt p) {
 		/*
@@ -128,7 +128,7 @@ public class Produkt {
 		
 		/*
 		 * 2.Schritt	wir schauen ob das Objekt existiert
-		 * Falls nein können wie direkt false zurückgeben
+		 * Falls nein kÃ¶nnen wie direkt false zurÃ¼ckgeben
 		 */
 		if(p == null) {
 			return false;
@@ -136,8 +136,8 @@ public class Produkt {
 		
 		/*
 		 * 3.Schritt	 wir vergleichen ob die Klassen gleich sind
-		 * Falls die Klassen nicht gleich sind kann man direkt false zurückgeben
-		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden können
+		 * Falls die Klassen nicht gleich sind kann man direkt false zurÃ¼ckgeben
+		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden kÃ¶nnen
 		 */
 		if(getClass() != p.getClass()) {
 			return false;
@@ -145,18 +145,18 @@ public class Produkt {
 		
 		/*
 		 *  4.Schritt	wir konventieren den Typ um
-		 *  dies ist dazu da, damit wir auf die Atribute und Methoden zugreifen können
+		 *  dies ist dazu da, damit wir auf die Atribute und Methoden zugreifen kÃ¶nnen
 		 */
 		Produkt produkt = (Produkt) p;
 		
 		/**
-		 * 	5.Schritt	wie vergeleichen die Atribute miteinander
+		 * 5.Schritt	wie vergeleichen die Atribute miteinander
 		 */
 		return (this.Beschreibung == p.getBeschreibung()) && (this.Bezeichnung == p.getBezeichnung()) && (this.Preis == p.getPreis()) && (this.ProduktID == p.ProduktID);
 	}
 	
 	/**
-	 * Gibt den HashCode ausgerechnet durch die Formel zurück
+	 * Gibt den HashCode ausgerechnet durch die Formel zurÃ¼ck
 	 */
 	@Override
 	public int hashCode() {
