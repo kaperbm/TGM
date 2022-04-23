@@ -2,6 +2,7 @@ package src;
 /**
  * Diese Klasse simuliert ein Produkt
  * Sie beinhaltet eine ID, Bezeichnung, eine Beschreibung und einen Preis
+ * Sie inkuldiert bereits alle Inhalte der Aufgabe E 4b.1.1 equals und hashcode richtig überschreiben
  * @author Kacper Bohaczyk
  * @date 22-04-2022
  */
