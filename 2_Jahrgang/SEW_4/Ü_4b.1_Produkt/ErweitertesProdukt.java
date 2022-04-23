@@ -1,7 +1,7 @@
 package src;
 /**
  * Ist eine Erweiterung zu der Klasse Produkt
- * Sie beinhaltet schon die Inhalte der Aufagabe: E_4b.1.1 equals und hashcode richtig überschreiben
+ * Sie beinhaltet schon alle Inhalte der Aufgabe E 4b.1.1 equals und hashcode richtig überschreiben
  * @author 	Kacper Bohaczyk
  * @date	10.3.2022
  */
