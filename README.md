@@ -25,5 +25,5 @@ Es ist auf **keinen Fall** Usern erlaubt Inhalte unreflektiert zu kopieren! Dies
 
 ## Danke
 
-Vielen Dank an den Prof. Walter der mich beim meinem Projekt supportet hat.
+Vielen Dank an den Prof. Rafeiner der mich beim meinem Projekt supportet hat.
 
