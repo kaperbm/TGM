@@ -6,7 +6,7 @@ Datum: **22.04.2022**
 
 ## Einführung 
 
-In diesem Ordner findet ihr alle von mir gemachten SEW Beispiele. Der Zweck dieses Ordners ist aber nicht allen eine einfache Kopie bereitzustellen, sondern anderen zu **helfen, falls sie weiter nicht kommen**. Besonders wichtig ist es für mich das jeder den Inhalt **versteht** und gut für jeden Test **vorbereitet** ist, deshalb habe ich alle Projekte gut dokumentiert und zu jedem den Auftrag hinzugefügt. 
+In diesem Ordner findet ihr alle von mir gemachten TGM/SEW Beispiele. Der Zweck dieses Ordners ist aber nicht allen eine einfache Kopie bereitzustellen, sondern anderen zu **helfen, falls sie nicht  weiter kommen**. Besonders wichtig ist es für mich das jeder den Inhalt **versteht** und gut für jeden Test **vorbereitet** ist, deshalb habe ich alle Projekte gut dokumentiert und zu jedem den Auftrag hinzugefügt. 
 
 ## Gute Lernquellen
 
@@ -25,5 +25,5 @@ Es ist auf **keinen Fall** Usern erlaubt Inhalte unreflektiert zu kopieren! Dies
 
 ## Danke
 
-Vielen Dank an den Prof. Walter der mich beim meinem Projekt supportet hat.
+Vielen Dank an den Prof. Rafeiner der mich beim meinem Projekt supportet hat.
 

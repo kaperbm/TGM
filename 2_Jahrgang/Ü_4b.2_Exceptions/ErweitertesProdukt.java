@@ -16,12 +16,12 @@ public class ErweitertesProdukt extends Produkt {
 	
 	/**
 	 * Ist der Konstruktor zum erweiterten Produkt
-	 * @param ProduktID			Ist die ProduktID die rübergegeben wird
-	 * @param Bezeichnung		Ist die Bezeichnung die rübergegeben wird
-	 * @param Beschreibung		Ist die Beschreibung die rübergegeben wird
-	 * @param Preis				Ist die Preis die rübergegeben wird
-	 * @param rabatt			Ist die Rabatt die rübergegeben wird
-	 * @throws NumericRangeException	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * @param ProduktID			Ist die ProduktID die rÃ¼bergegeben wird
+	 * @param Bezeichnung			Ist die Bezeichnung die rÃ¼bergegeben wird
+	 * @param Beschreibung			Ist die Beschreibung die rÃ¼bergegeben wird
+	 * @param Preis				Ist die Preis die rÃ¼bergegeben wird
+	 * @param rabatt			Ist die Rabatt die rÃ¼bergegeben wird
+	 * @throws NumericRangeException	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public ErweitertesProdukt(int ProduktID, String Bezeichnung, String Beschreibung, double Preis , double rabatt) throws NumericRangeException {
 		super(ProduktID, Bezeichnung, Beschreibung, Preis);
@@ -32,13 +32,13 @@ public class ErweitertesProdukt extends Produkt {
 			this.rabatt = rabatt;
 			}
 		else {
-			throw new NumericRangeException("Der Rabatt muss größer als 0 sein, aber kleiner als 100!");				// Die Exception wird geworfen falls der Parameter größer als 100 oder kleiner als 0 ist
+			throw new NumericRangeException("Der Rabatt muss grÃ¶ÃŸer als 0 sein, aber kleiner als 100!");				// Die Exception wird geworfen falls der Parameter grÃ¶ÃŸer als 100 oder kleiner als 0 ist
 		}
 	}
 
 	/**
-	 * Ist der Setter für die Bewertung
-	 * @param anzahl  ist die länge der Arrays
+	 * Ist der Setter fÃ¼r die Bewertung
+	 * @param anzahl  ist die lÃ¤nge der Arrays
 	 */
 	public void setBewertungen(int anzahl) {
 		if(anzahl >=0) {
@@ -49,9 +49,9 @@ public class ErweitertesProdukt extends Produkt {
 		}
 	}
 	/**
-	 * Ist der Setter für den Rabatt
-	 * @param rabatt ist der neue Rabatt
-	 * @throws NumericRangeException	Diese Exception catcht ob die rübergegebenen Parameter im gültigem Bereich sind
+	 * Ist der Setter fÃ¼r den Rabatt
+	 * @param rabatt 			ist der neue Rabatt
+	 * @throws NumericRangeException	Diese Exception catcht ob die rÃ¼bergegebenen Parameter im gÃ¼ltigem Bereich sind
 	 */
 	public void setRabatt(double rabatt) throws NumericRangeException {
 		if((rabatt>=0) && (rabatt <=100)) {
@@ -60,29 +60,29 @@ public class ErweitertesProdukt extends Produkt {
 		this.rabatt = rabatt;
 		}
 		else {
-			throw new NumericRangeException("Der Rabatt muss größer als 0 sein, aber kleiner als 100!");				// Die Exception wird geworfen falls der Parameter größer als 100 oder kleiner als 0 ist
+			throw new NumericRangeException("Der Rabatt muss grÃ¶ÃŸer als 0 sein, aber kleiner als 100!");				// Die Exception wird geworfen falls der Parameter grÃ¶ÃŸer als 100 oder kleiner als 0 ist
 		}
 	}
 	
 	
 	/**
-	 * Ist der Getter für die Bewertung
-	 * @return	gibt das Bewertungs-array zurück
+	 * Ist der Getter fÃ¼r die Bewertung
+	 * @return	gibt das Bewertungs-array zurÃ¼ck
 	 */
 	public Bewertung[] getBewertung() {
 		return bewertungen;
 	}
 	
 	/**
-	 * Ist der Getter für den Rabatt
-	 * @return	gibt die rabatt-variable zurück
+	 * Ist der Getter fÃ¼r den Rabatt
+	 * @return	gibt die rabatt-variable zurÃ¼ck
 	 */
 	public double getRabatt() {
 		return rabatt;
 	}
 	/**
 	 * Diese Methode rechnet den ermeassigten Preis aus
-	 * @return	gibt den ermaessigten Preis zurück
+	 * @return	gibt den ermaessigten Preis zurÃ¼ck
 	 */
 	public double ermaessigterPreis() {
 		
@@ -91,34 +91,34 @@ public class ErweitertesProdukt extends Produkt {
 	
 	/**
 	 * Diese Methode rechnet den gesamten Preis aus, nachdem er abgerechnet wurde
-	 * @return gibt den neuen Preis zurück
+	 * @return gibt den neuen Preis zurÃ¼ck
 	 */
 	public double gesamtPreis(int anzahl) {
 		return (super.getPreis() * anzahl)  * rabatt;
 	}
 	
 	/**
-	 * Diese Methode fügt eine neue Bewertung hinzu
+	 * Diese Methode fÃ¼gt eine neue Bewertung hinzu
 	 * @param bewertung	Ist die neue Bewertung
 	 */
 	public void neueBewertung(Bewertung bewertung) {
 		for(int i = 0; i< bewertungen.length; i++) {
 			if(bewertungen[i] == null) {					// Das if-Statement schaut nach ob der Platz im Array leer ist
-				bewertungen[i] = bewertung;					// Er fügt die neue Bewertung in die Bewertungsliste hinzu
+				bewertungen[i] = bewertung;					// Er fÃ¼gt die neue Bewertung in die Bewertungsliste hinzu
 				break;										// Unterbricht die for-Schleife
 			}
 		}
 	}
 	
 	/**
-	 * Diese Methode gibt die Durchschnittsbewertung zurück
-	 * @return die 	Durchschnittsbewertung wird zurückgegeben
+	 * Diese Methode gibt die Durchschnittsbewertung zurÃ¼ck
+	 * @return 	Die Durchschnittsbewertung wird zurÃ¼ckgegeben
 	 */
 	public double durchschnittsbewertung() {
 		double durchschnitt = 0.0;
 		int div = 0;
 		for(int i = 0; i< bewertungen.length; i++) {
-			if(bewertungen[i]!= null) {					// Mittels der for-Schleife und dem If-Statement wird ermittelt wie groß der befüllte Bereich vom Array ist
+			if(bewertungen[i]!= null) {					// Mittels der for-Schleife und dem If-Statement wird ermittelt wie groÃŸ der befÃ¼llte Bereich vom Array ist
 				durchschnitt = durchschnitt + bewertungen[i].getBewertung();		
 				div++;
 			}
@@ -128,20 +128,20 @@ public class ErweitertesProdukt extends Produkt {
 	}
 	
 	/**
-	 * Diese Methode fasst alle Daten in einen String zusammen und gibt ihn dann zurück
-	 * @return 	Der String wird zurückgegeben
+	 * Diese Methode fasst alle Daten in einen String zusammen und gibt ihn dann zurÃ¼ck
+	 * @return 	Der String wird zurÃ¼ckgegeben
 	 */
 	@Override
 	public String toString() {
 		String daten = super.toString();
-		daten = daten + " (" + ermaessigterPreis() + " Euro mit " + getRabatt() + " Ermäßigung) - Wertung: " +  durchschnittsbewertung() +   " (1.5 Schlechte Qualität; 4.6 Super Produkt; 3.8 Unfreundlicher Lieferant)\n";
+		daten = daten + " (" + ermaessigterPreis() + " Euro mit " + getRabatt() + " ErmÃ¤ÃŸigung) - Wertung: " +  durchschnittsbewertung() +   " (1.5 Schlechte QualitÃ¤t; 4.6 Super Produkt; 3.8 Unfreundlicher Lieferant)\n";
 		return daten;
 	}
 	
 	/**
-	 * Vergleicht die Atribute des rübergegebene Produktess mit den des jetzigem
+	 * Vergleicht die Atribute des rÃ¼bergegebene Produktess mit den des jetzigem
 	 * @param p 	Ist ErweiterteProdukt, welches verglichen wird
-	 * @return	Gibt zurück ob die Atribute übereinstimmen
+	 * @return	Gibt zurÃ¼ck ob die Atribute Ã¼bereinstimmen
 	 */
 	public boolean equals(ErweitertesProdukt p) {
 		/*
@@ -154,7 +154,7 @@ public class ErweitertesProdukt extends Produkt {
 		
 		/*
 		 * 2.Schritt	wir schauen ob das Objekt existiert
-		 * Falls nein können wie direkt false zurückgeben
+		 * Falls nein kÃ¶nnen wie direkt false zurÃ¼ckgeben
 		 */
 		if(p == null) {
 			return false;
@@ -162,8 +162,8 @@ public class ErweitertesProdukt extends Produkt {
 		
 		/*
 		 * 3.Schritt	 wir vergleichen ob die Klassen gleich sind
-		 * Falls die Klassen nicht gleich sind kann man direkt false zurückgeben
-		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden können
+		 * Falls die Klassen nicht gleich sind kann man direkt false zurÃ¼ckgeben
+		 * dies hat den Grund, weil die Atribute dann anders sind und nicht verglichen werden kÃ¶nnen
 		 */
 		if(getClass() != p.getClass()) {
 			return false;
