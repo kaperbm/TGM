@@ -1,4 +1,4 @@
-package sew_1chit;		// Das Package einfach löschen falls die Aufgabe ohne einen Package sein soll
+package sew_1chit;	// Das Package einfach löschen falls die Aufgabe ohne einen Package sein soll
 /**
  * Diese Klasse soll eine Zeile aus 9 Sternchen ausgeben
  * @author Kacper Bohaczyk
@@ -7,7 +7,7 @@ package sew_1chit;		// Das Package einfach löschen falls die Aufgabe ohne einen
 public class SternchenZeile {
 	/**
 	 * Die main Klassse gibt die Sternchenzeile aus
-	 * @param args
+	 * @param args Argumente
 	 */
 	 public static void main(String[] args) {
 	     int laenge;				// Die Variable wird deklariert
