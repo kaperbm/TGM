@@ -1,4 +1,4 @@
-package sew_1chit;	// Das package einfach löschen falls in BlueJ programmiert werden muss
+package sew_1chit;	// Das package einfach lÃ¶schen falls in BlueJ programmiert werden muss
 /**
  * Diese Klasse soll zeigen welche EscapeSequenzen es gibt und wie sie funktionieren
  * @author Kacper Bohaczyk
@@ -11,11 +11,11 @@ public class EscapeSequenzen {
 	  */
 	    public static void main (String[] args) { 
 	    System.out.println(
-	    "\\\\\tKann einen Backslash ausgeben\n"					//  \\  gibt ein Backslash (\) aus
-	    + "\\\"\tZeigt ein doppeltes Anführungszeichen an\n"	//	\"  gibt ein doppeltes Anführungszeichen (") aus
-	    + "\\'\tZeigt ein einfaches Anführungszeichen an\n"		//  \'  gibt ein einfaches Anführungszeichen (') aus
-	    + "\\n\tWechselt in die neue Zeile\n"					//  \n	wechselt zu einer neuen Zeile
-	    + "\\t\tMacht einen Tabulatorsprung"					//	\t	macht einen Tabulatorsprung
+	    "\\\\\tKann einen Backslash ausgeben\n"			//  \\  gibt ein Backslash (\) aus
+	    + "\\\"\tZeigt ein doppeltes AnfÃ¼hrungszeichen an\n"	//	\"  gibt ein doppeltes AnfÃ¼hrungszeichen (") aus
+	    + "\\'\tZeigt ein einfaches AnfÃ¼hrungszeichen an\n"		//  \'  gibt ein einfaches AnfÃ¼hrungszeichen (') aus
+	    + "\\n\tWechselt in die neue Zeile\n"			//  \n	wechselt zu einer neuen Zeile
+	    + "\\t\tMacht einen Tabulatorsprung"			//	\t	macht einen Tabulatorsprung
 	    );
 	  }
 }
