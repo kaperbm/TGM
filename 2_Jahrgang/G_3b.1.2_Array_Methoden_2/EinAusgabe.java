@@ -15,23 +15,23 @@ public class EinAusgabe {
     	int[] array = ArrayMethoden.zufallsArray(5);
     	System.out.println(ArrayMethoden.arrayToText(array));
     	/**
-    	 * Test zur neu hinzugefügten Methoden aus der "1-Version"
+    	 * Test zur neu hinzugefÃ¼gten Methoden aus der "1-Version"
     	 */
     	
-    	ArrayMethoden.fillArray(array, -2);						// Test bei einem Fehler
+    	ArrayMethoden.fillArray(array, -2);				// Test bei einem Fehler
     	System.out.println(ArrayMethoden.arrayToText(array));
-    	ArrayMethoden.fillArray(array, 2);						// Testet ob sich das Array mit dem 2 parameter überschreiben/befüllen lässt
+    	ArrayMethoden.fillArray(array, 2);				// Testet ob sich das Array mit dem 2 parameter Ã¼berschreiben/befÃ¼llen lÃ¤sst
     	System.out.println(ArrayMethoden.arrayToText(array));
     	ArrayMethoden.fillZufallArray(array, -2, 2); 			// Testet bei einem Fehler
     	System.out.println(ArrayMethoden.arrayToText(array));
-    	ArrayMethoden.fillZufallArray(array, 2, 6);				// Testet ob sich ein zufälliger Inhalt erstellen lässt
+    	ArrayMethoden.fillZufallArray(array, 2, 6);			// Testet ob sich ein zufÃ¤lliger Inhalt erstellen lÃ¤sst
     	System.out.println(ArrayMethoden.arrayToText(array));	
-    	ArrayMethoden.vertausche(array, -2, 20);				// Test bei einem Fehler
+    	ArrayMethoden.vertausche(array, -2, 20);			// Test bei einem Fehler
     	System.out.println(ArrayMethoden.arrayToText(array));
-    	ArrayMethoden.vertausche(array, 2, 3);					// Testet aus ob sich der Inhalt vertauschen lässt
+    	ArrayMethoden.vertausche(array, 2, 3);				// Testet aus ob sich der Inhalt vertauschen lÃ¤sst
     	System.out.println(ArrayMethoden.arrayToText(array));
     	/**
-    	 * Test zur neu hinzugefügten Methoden aus der "2-Version"
+    	 * Test zur neu hinzugefÃ¼gten Methoden aus der "2-Version"
     	 */
     	
     	}
