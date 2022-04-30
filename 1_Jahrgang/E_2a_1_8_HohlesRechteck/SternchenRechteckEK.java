@@ -11,7 +11,7 @@ public class SternchenRechteckEK {
 	 */
 	public static void main(String[] args){
 	    int hoehe = 5;  					// Die hoehe wird deklariert
-	    int breite = 9;						// Die breite wird deklariert
+	    int breite = 9;					// Die breite wird deklariert
 	    hoehe = hoehe - 2;					// Die vollen Felder werden subtrahiert
 	    
 	    
@@ -19,29 +19,29 @@ public class SternchenRechteckEK {
          * Es wird jetzt eine ganze Zeile von Sternchen ausgegeben 
          */
 	        for(int laenge = breite;laenge > 0;laenge--){
-	        	System.out.print('*');		// Gibt ein Sternchen aus
+	        	System.out.print('*');			// Gibt ein Sternchen aus
 	        }	
 	        
 	        /* 
 	         * Es werden jetzt die hohlen Zeilen des Rechteckes ausgegeben
 	         */
-	        System.out.println();				// Es wird jetzt eine neue Zeile erstellt (geht auch mit \n)
-	        for(int hoehe2 = hoehe ;hoehe2 > 0;hoehe2-- ){			// Eine for schleife für die leeren Plätze
-	        	int breiteOhneRand = breite - 2;					// Die umrandungen werden subtrahiert
-	            System.out.print('*');			// Gibt ein Sternchen aus
-	            while(breiteOhneRand > 0){		// Eine Schleife um das innere des Rechtecks mit Leerzeichen zu füllen 
-	            	breiteOhneRand--;			// zieht 1 ab von breiteOhneRand
-	                 System.out.print(' ');		// Gibt ein Leerzeichen aus
+	        System.out.println();					// Es wird jetzt eine neue Zeile erstellt (geht auch mit \n)
+	        for(int hoehe2 = hoehe ;hoehe2 > 0;hoehe2-- ){		// Eine for schleife fÃ¼r die leeren PlÃ¤tze
+	        	int breiteOhneRand = breite - 2;		// Die umrandungen werden subtrahiert
+	            System.out.print('*');				// Gibt ein Sternchen aus
+	            while(breiteOhneRand > 0){				// Eine Schleife um das innere des Rechtecks mit Leerzeichen zu fÃ¼llen 
+	            	breiteOhneRand--;				// zieht 1 ab von breiteOhneRand
+	                 System.out.print(' ');				// Gibt ein Leerzeichen aus
 	            }
-	            System.out.print('*');			// Gibt Sternchen aus
-	            System.out.println();			// Macht eine neue Zeile
+	            System.out.print('*');				// Gibt Sternchen aus
+	            System.out.println();				// Macht eine neue Zeile
 	        }
 	        
 	        /* 
-	         * Es wird jetzt eine volle Zeile ausgegeben um das Rechteck zu Schließen 
+	         * Es wird jetzt eine volle Zeile ausgegeben um das Rechteck zu SchlieÃŸen 
 	         */
 	        for(int laenge = breite;laenge > 0;laenge--){
-	        	System.out.print('*');			// Gibt ein Sternchen aus
+	        	System.out.print('*');				// Gibt ein Sternchen aus
 	        }
 	    }
 }
