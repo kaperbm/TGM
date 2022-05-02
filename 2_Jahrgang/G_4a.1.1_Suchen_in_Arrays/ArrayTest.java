@@ -12,7 +12,7 @@ public class ArrayTest {
 	 */
 	public static void main(String[]args) {
 	int[] array = {1 , 4, 3 , 2 , 5, 6, 9, 8 ,7};
-	    System.out.println("Die Aussage \" der Array ist Sortiert\" ist:" + ArraySearch.isSorted(array));	// Testet ob das Array sortiert ist
+	System.out.println("Die Aussage \" der Array ist Sortiert\" ist:" + ArraySearch.isSorted(array));	// Testet ob das Array sortiert ist
 	System.out.println("Der index ist: " + ArraySearch.linearSearch(array, 3));		// Macht eine lineare suche der Zahl 3
 	System.out.println("Der index ist: " +ArraySearch.binarySearch(array, 4));		// Macht eine binaere Suche der Zahl 4
 	System.out.println("Der index ist: " +ArraySearch.searchMax(array));			// Sucht die groestmoegliche Zahl im Array
