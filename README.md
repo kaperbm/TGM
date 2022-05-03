@@ -22,8 +22,3 @@ Hier ist ein Link zu seinem Kanal: https://www.youtube.com/channel/UC_fFL5jgoCOr
 
 Es ist allen erlaubt Inhalte dieses Projektes weiterzusenden, solange sie zu Lernzwecken eingesetzt werden. \
 Es ist auf **keinen Fall** Usern erlaubt Inhalte unreflektiert zu kopieren! Dieses Projekt soll anderen Helfen besser zu lernen und dient nicht zu Plagiat-Weitergabe
-
-## Danke
-
-Vielen Dank an den Prof. Rafeiner der mich beim meinem Projekt supportet hat.
-
