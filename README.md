@@ -1,4 +1,4 @@
-# TGM-HIT-SEW
+# TGM-HIT-SEW/DE
 
 Verfasser: **Kacper Bohaczyk**
 
