@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/E_2a_1_8_HohlesRechteck" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/E_2a_2_8_Weitere-Muster" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_1_10_Escape-Sequenzen" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_1_7_SternchenRechteck" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_1_9_Stringverkettung" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_2_1_Gruss-mit-Eingabe" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_2_5_Rechteck-mit-Eingabe" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/G_2a_2_6_Dezimalzahlen" isTestSource="false" packagePrefix="sew_1chit" />
+      <sourceFolder url="file://$MODULE_DIR$/UG_2a_1_5_SternchenZeile" isTestSource="false" packagePrefix="sew_1chit" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

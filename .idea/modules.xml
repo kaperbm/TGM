@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_Jahrgang/1_Jahrgang.iml" filepath="$PROJECT_DIR$/1_Jahrgang/1_Jahrgang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_Jahrgang/2_Jahrgang.iml" filepath="$PROJECT_DIR$/2_Jahrgang/2_Jahrgang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TGM-SEW.iml" filepath="$PROJECT_DIR$/.idea/TGM-SEW.iml" />
+    </modules>
+  </component>
+</project>

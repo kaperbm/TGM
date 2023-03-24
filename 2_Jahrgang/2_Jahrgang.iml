@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/G_3b.1.1_Array-Methoden" isTestSource="false" packagePrefix="ArrayMethoden" />
+      <sourceFolder url="file://$MODULE_DIR$/G_3b.1.2_Array-Methoden_2" isTestSource="false" packagePrefix="ArrayMethoden" />
+      <sourceFolder url="file://$MODULE_DIR$/G_3b.2.3_Array-Methoden_3" isTestSource="false" packagePrefix="ArrayMethoden" />
+      <sourceFolder url="file://$MODULE_DIR$/G_4a.0.1_Array-Methoden_4" isTestSource="false" packagePrefix="ArrayMethoden" />
+      <sourceFolder url="file://$MODULE_DIR$/G_4a.1.1_Suchen_in_Arrays" isTestSource="false" packagePrefix="arraySearch" />
+      <sourceFolder url="file://$MODULE_DIR$/Ü_4b.1_Produkt+E_4b.1.1_equals_und_hashcode_richtig_überschreiben" isTestSource="false" packagePrefix="src" />
+      <sourceFolder url="file://$MODULE_DIR$/Ü_4b.2_Exceptions" isTestSource="false" packagePrefix="src" />
+      <sourceFolder url="file://$MODULE_DIR$/Ü_4b.3_Interfaces_Kaufbar_und_Identifizierbar" isTestSource="false" packagePrefix="src" />
+      <sourceFolder url="file://$MODULE_DIR$/Ü_4c.1.1_Selbst-erstellte-Grafik" isTestSource="false" packagePrefix="kbohaczyk" />
+      <sourceFolder url="file://$MODULE_DIR$/Ü_4c.1.2_Viele Layouts" isTestSource="false" packagePrefix="kbohaczyk" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
