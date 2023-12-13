@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Rechner</string>
-    <string-array name="operators">
-        <item>+</item>
-        <item>-</item>
-        <item>*</item>
-        <item>/</item>
-    </string-array>
-</resources>
