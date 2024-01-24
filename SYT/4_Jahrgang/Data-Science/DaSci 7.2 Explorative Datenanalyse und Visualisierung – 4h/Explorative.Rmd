@@ -1,0 +1,168 @@
+---
+title: "Explorative Datenanalyse"
+author: "Kacper Bohaczyk"
+date: "2024-12-22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Infos `state`
+Das Dataset zeigt eine Auswahl an Daten über die 50 Staaten der USA an. \hfill \break
+Bevölkerung in 100 Tausenden, \hfill \break
+Einkommen pro Person in USD, \hfill \break
+Analphabetenrate als Prozent der Bevölkerung, \hfill \break
+Lebenserwartung in Jahren, \hfill \break
+Mord und Totschlag pro 100 Tausend Einwohner, \hfill \break
+Menschen mit High-School abschlüssen als Prozent der Bevölkerung, \hfill \break
+Tage mit Temperatur unter 0° C in großen Städten (1931-1960),  \hfill \break
+Fläche der Staaten in Quadratmeilen.
+
+```{r}
+?state.x77
+summary(state.x77)
+```
+
+## Bevölkerung
+
+**Median:**  2838.5 \hfill \break
+**Mitellwert:** 4246.42 \hfill \break
+**Standardabweichung:** 4464.49 \hfill \break
+**Quartildistanz:** 3889 \hfill \break
+
+Es gibt einen großen unterschied zwishcen den Median und dem Mittlewert. Dadurch erkennt man das die Ränder stark verzehren. Für uns ist der Median mehr sinnvoll
+
+```{r}
+data(state)
+round(median(state.x77[,"Population"]),2)
+round(mean(state.x77[,"Population"]),2)
+round(sd(state.x77[,"Population"]),2)
+round(IQR(state.x77[,"Population"]),2)
+```
+## Einkommen pro Person
+
+**Median:** 4519 \hfill \break
+**Mitellwert:** 4435.8 \hfill \break
+**Standardabweichung:** 614.47 \hfill \break
+**Quartildistanz:** 820.75 \hfill \break
+
+Der Unterschied zwischen dem Median und dem Mittlewert ist nicht sehr groß
+Die Daten werden durch die relativen großen Ausreißer am Rande des Sets verzogen.
+
+```{r}
+round(median(state.x77[,"Income"]),2)
+round(mean(state.x77[,"Income"]),2)
+round(sd(state.x77[,"Income"]),2)
+round(IQR(state.x77[,"Income"]),2)
+```
+
+## Analphabetenrate
+
+**Median:** 0.95 \hfill \break
+**Mitellwert:** 1.17\hfill \break
+**Standardabweichung:** 0.61 \hfill \break
+**Quartildistanz:** 0.95 \hfill \break
+
+Es gibt keine großen Ausreißer. Die Daten sind ähnlich
+
+```{r}
+round(median(state.x77[,"Illiteracy"]),2)
+round(mean(state.x77[,"Illiteracy"]),2)
+round(sd(state.x77[,"Illiteracy"]),2)
+round(IQR(state.x77[,"Illiteracy"]),2)
+
+```
+## Lebenserwartung in Jahren
+
+**Median:** 70.67 \hfill \break
+**Mitellwert:** 70.88\hfill \break
+**Standardabweichung:** 1.34 \hfill \break
+**Quartildistanz:** 1.78 \hfill \break
+
+Erstaunlicherweise gibt es keine großen Ausreißer.
+
+```{r}
+round(median(state.x77[,"Life Exp"]),2)
+round(mean(state.x77[,"Life Exp"]),2)
+round(sd(state.x77[,"Life Exp"]),2)
+round(IQR(state.x77[,"Life Exp"]),2)
+```
+## Mord und Totschlag pro 100 Tausend Einwohner
+
+**Median:** 6.85\hfill \break
+**Mitellwert:** 7.38\hfill \break
+**Standardabweichung:** 3.69 \hfill \break
+**Quartildistanz:** 6.32 \hfill \break
+
+Keine großen Ausreißer
+
+```{r}
+round(median(state.x77[,"Murder"]),2)
+round(mean(state.x77[,"Murder"]),2)
+round(sd(state.x77[,"Murder"]),2)
+round(IQR(state.x77[,"Murder"]),2)
+```
+# Plotten
+
+```{r}
+
+library(ggplot2)
+library(gridExtra)
+# Daten laden
+data(state)
+df <- as.data.frame(state.x77)
+
+# Variablennamen für die Grafiken anpassen
+names(df)[4] <- "LifeExp"  # Ändern von "Life Exp" zu "LifeExp"
+
+# Variablen auswählen
+vars <- c("Population", "Income", "Illiteracy", "LifeExp", "Murder")
+
+# Funktion, um die vier Grafiktypen für eine gegebene Variable zu erstellen
+plot_matrix <- function(df, var) {
+  # Boxplot
+  p1 <- ggplot(df, aes_string(x = var)) + 
+    geom_boxplot() + 
+    ggtitle(paste(var, "- Boxplot"))
+
+  # Histogramm mit Dichteschätzung
+  p2 <- ggplot(df, aes_string(x = var)) + 
+    geom_histogram(aes(y = ..density..), binwidth = 1) + 
+    geom_density(col = "red") +
+    ggtitle(paste(var, "- Histogramm mit Dichteschätzung"))
+
+  # ECDF
+  p3 <- ggplot(df, aes_string(x = var)) + 
+    stat_ecdf(geom = "step") +
+    ggtitle(paste(var, "- ECDF"))
+
+  # QQ-Plot
+  p4 <- ggplot(df, aes_string(sample = var)) + 
+    stat_qq() +
+    stat_qq_line() +
+    ggtitle(paste(var, "- QQ-Plot"))
+
+  # Anordnen der Plots in einer 2x2-Matrix
+  grid.arrange(p1, p2, p3, p4, nrow = 2)
+}
+
+for (var in vars) {
+  plot_matrix(df, var)
+}
+```
+
+
+## Ausreißer & Ränder Analyse
+
+Die schlimmsten Ausreißer sind in 'Population', Städte wie Californien und New York haben beide ~20 Millionen einwohner, während Wyoming, Vermont und Alaska alle weniger als 500k haben.
+
+Bei Einkommen gibt es auch Außreiser, da Missisipi, Vermont,  Alabama, West Virgina, Kentucky und Louisiana alle unter 4000 DollerEinkommen haben und Alaska als einziger Staat über 6000$ Einkommen hat.
+
+Die Analphabetenrate, hat keine Ausreißer aber starke Ränder.
+
+Lebenserwartung hat weder starke Ränder oder Ausreißer, da es in allen Staaten sehr änhlich ist.
+
+Mord hat auch keine Ausreißer, nur wieder starke Ränder.
+
