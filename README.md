@@ -4,18 +4,18 @@ Willkommen zu meinem GitHub-Repository! Hier könnt ihr alle Aufgaben finden, di
 ## Überblick
 In diesem Repository sind meine schulischen Projekte und Aufgaben gesammelt. Ihr könnt durch die verschiedenen Verzeichnisse navigieren, um einen Einblick in meine Lernfortschritte und Fähigkeiten zu bekommen.
 
-- **SEW:**  In diesem Verzeichniss findet ihr alles rundherum um das Fach Softwareentwicklung 
-- **SYT:** In diesem Verzeichniss findet ihr alles rundherum um das Fach "Systemtechnik"
-- **INSY:**In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **SEW**  In diesem Verzeichniss findet ihr alles rundherum um das Fach "Softwareentwicklung"
+- **SYT**  In diesem Verzeichniss findet ihr alles rundherum um das Fach "Systemtechnik"
+- **INSY** In diesem Verzeichniss findet ihr alles rundherum um das Fach
 "Informationssysteme"
-- **MEDT:**In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **MEDT** In diesem Verzeichniss findet ihr alles rundherum um das Fach
 "Mediendesign"
-- **ITSI**In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **ITSI** In diesem Verzeichniss findet ihr alles rundherum um das Fach
 "IT-Sicherheit"
-- **ITP** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **ITP**  In diesem Verzeichniss findet ihr alles rundherum um das Fach
 "Informationstechnische Projekte"
-- **WIRE**In diesem Verzeichniss findet ihr alles rundherum um das Fach
-"Wirtschaft und RECHT"
+- **WIRE** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+"Wirtschaft und Recht"
 
 
 ## Anleitungen und Dokumentationen
