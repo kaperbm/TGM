@@ -1,0 +1,90 @@
+@startuml
+class Subtract {
++ double evaluate()
++ String toString()
+}
+class Multiplicate {
++ double evaluate()
++ String toString()
+}
+class ExpressionTest {
++ void testDivide()
++ void testMultiplicate()
++ void testMax()
++ void testMin()
++ void testAdd()
++ void testSubtract()
++ void testExponential()
++ void testExponentialWithNegation()
++ void testDivideByZero()
++ void testExponentialWithNegativeHalf()
+}
+class Number {
+~ double value
++ double evaluate()
++ String toString()
+}
+class Exponential {
++ double evaluate()
++ String toString()
+}
+class Max {
++ double evaluate()
++ String toString()
+}
+class Negate {
++ double evaluate()
++ String toString()
+}
+abstract class Multi {
+~ ArrayList<Expression> args
++ ArrayList<Expression> getArgs()
++ void setArgs(ArrayList<Expression>)
+}
+class Divide {
++ double evaluate()
++ String toString()
+}
+abstract class Dual {
+- Expression left
+- Expression right
++ Expression getLeft()
++ void setLeft(Expression)
++ Expression getRight()
++ void setRight(Expression)
+}
+class Min {
++ double evaluate()
++ String toString()
+}
+abstract class Mono {
+- Expression mono
++ Expression getMono()
++ void setMono(Expression)
+}
+interface Expression {
+~ double evaluate()
+~ String toString()
+}
+class Add {
++ double evaluate()
++ String toString()
+}
+Multi o--"1..*" Expression
+Dual o--"2" Expression
+Mono o--"1" Expression
+
+Dual <|-- Subtract
+Dual <|-- Multiplicate
+Expression <|.. Number
+Dual <|-- Exponential
+Multi <|-- Max
+Mono <|-- Negate
+Expression <|.. Multi
+Dual <|-- Divide
+Expression <|.. Dual
+Multi <|-- Min
+Expression <|.. Mono
+Dual <|-- Add
+
+@enduml
