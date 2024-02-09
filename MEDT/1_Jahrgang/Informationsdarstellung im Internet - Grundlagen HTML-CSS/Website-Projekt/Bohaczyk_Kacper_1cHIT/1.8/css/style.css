@@ -1,0 +1,281 @@
+body {
+  background-color: gray;
+}
+.link{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+  fieldset {
+    width: 35%;
+    height: 390px;
+    background-color: white;
+
+  }
+legend {
+  background-color: red;
+}
+.link::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.link:hover{
+    color: red;
+}
+.link:hover:after{
+    width: 100%;
+}
+.geld {
+  width: 60px;
+}
+.geld2 {
+  width: 60px;
+}
+.Titel {
+ color: black;
+ position: relative;
+ width: 5%;
+ top: 50px;
+ font-size: 20px;
+ font-family: arial;
+ left: 5%;
+}
+.tabele {
+  position: relative;
+  color: black;
+  font-family: Comic Sans MS;
+  left: 20%;
+  font-size: 25px;
+}
+.knopf {
+  width: 100%;
+  height: 30px;
+}
+.ber1{
+  flex: 1;
+  background-color: red;
+  display: block;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.ger1 {
+  color: white;
+  background-color: red;
+  display: block;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.ger2 {
+  color: white;
+  background-color: red;
+  display: block;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 120px;
+}
+.ber2 {
+  color: white;
+  background-color: red;
+  display: block;
+  width: 30%;
+  height: 400px;
+}
+.lege1 {
+  background-color: red;
+}
+.lege2 {
+  color: white;
+  background-color: red;
+}
+
+.handybox1 {
+    display: flex;
+    background-color: red;
+    width: 35%;
+    height: 400px;
+    border-radius: 10px;
+    margin-left: 400px;
+    
+}
+.handybox2 {
+  display: flex;
+    background-color: red;
+    width: 45%;
+    height: 420px;
+    border-radius: 10px;
+}
+.handybox3 {
+  display: flex;
+  background-color: red;
+  width: 45%;
+  border-radius: 10px;
+  height: 420px;
+}
+.handybox4 {
+  display: flex;
+  background-color:red; 
+  width: 45%;
+  border-radius: 10px;
+  height: 420px;
+}
+.handybox5 {
+  display: flex;
+  background-color:red; 
+  width: 45%;
+  border-radius: 10px;
+  height: 420px;
+}
+.handy1 {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  flex: 1;
+  
+}
+.div2 {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  justify-content: space-between;
+}
+.schrift {
+  flex: 2;
+}
+legend {
+  color: black;
+}
+.knopf1 {
+  top: 90%;
+  bottom: 5%;
+  width: 100%;
+  height: 10%;
+}
+.account {
+  position: relative;
+  width: 5%;
+  color: black;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  left: 10%;
+  flex: 1;
+}
+.ausloggen {
+  position: relative;
+  width: 5%;
+  color: black;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  left: 10%;
+  flex: 1;
+}
+.einkauf {
+  position: relative;
+  width: 5%;
+  color: black;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  left: 10%;
+  flex: 1;
+}
+.audio {
+  position: relative;
+  width: 5%;
+  color: black;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  left: 10%;
+}
+.bildschirm {
+  position: relative;
+  width: 5%;
+  color: black;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+  left: 10%;
+}
+.bilder {
+  width: 5px;
+  margin-right: 75%;
+  flex: 2;
+  margin-left: 15%;
+  height: 50px;
+}
+.bilder2 {
+  width: 5px;
+  margin-right: 73%;
+  flex: 2;
+  margin-left: 17%;
+  height: 50px;
+}
+.bilder3 {
+  width: 5px;
+  margin-right: 80%;
+  flex: 2;
+  margin-left: 10%;
+  height: 50px;
+}
+.bilder4 {
+  width: 5px;
+  margin-right: 75%;
+  flex: 2;
+  margin-left: 15%;
+  height: 50px;
+}
+.bilder5 {
+  width: 5px;
+  margin-right: 75%;
+  flex: 2;
+  margin-left: 15%;
+  height: 50px;
+  flex: 2;
+}
+.iop {
+  display: flex;
+}
+.iop2 {
+  display: flex;
+}
+.iop3{
+  display: flex;
+}
+.iop4 {
+  display: flex;
+}
+.iop5 {
+  display: flex;
+}
+.mainbox{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-between;
+}
+.mainbox2{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-between;
+}
+.mainbox3 {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  justify-content: space-between;
+}
+.mainmain {
+  display: flex;
+  justify-content: space-between;
+}

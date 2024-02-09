@@ -1,0 +1,13 @@
+h1{
+  color: purple;
+  text-decoration: underline  red;
+  letter-spacing: .25em;
+}
+
+body{
+  background-color: green;
+  font: bold .9em/150% Georgia, serif;
+}
+th{
+  text-shadow: .2em .2em #ccc;
+}

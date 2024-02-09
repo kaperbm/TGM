@@ -1,0 +1,22 @@
+#schule {
+width: 1000px;
+height: 100px;
+background: red;
+}
+#fenster {
+width: 1000px;
+height: 600px;
+background: magenta;
+}
+#handy {
+  float: left;
+width: 200px;
+height: 600px;
+background: blue;
+}
+#pizza {
+float: right;
+width: 200px;
+height: 400px;
+background: yellow;
+}
