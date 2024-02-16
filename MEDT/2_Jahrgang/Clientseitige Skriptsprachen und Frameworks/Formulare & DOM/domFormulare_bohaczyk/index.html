@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+ <html>
+ 	<head>
+ 		<title> kbohaczyk </title>
+		 
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="css/style.css" class="re">
+ 	</head>
+ 	<body>
+	  <form action="index.html" method="post" name="form">
+        <fieldset>
+            <legend> Persönliche und Adressdaten</legend>
+            <div class="row">
+                <div class="col">
+                    <label for="name"> Vorname </label>
+                    <input type="text" name="name" id="name" value="Vorname">
+                </div>
+                <div class="col">
+                    <label for="name"> Geburtstag </label>
+                    <input type="date" name="bday" id="bday">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="name2"> Nachname</label>
+                    <input type="text" name="name2" id="name2" value="Nachname">
+                </div>
+                <div class="col">               
+                    Geschlecht
+                    <label for="male"> m </label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="female"> w </label>
+                    <input type="radio" name="gender" id="female">
+                </div>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset style="height: 200px;" >
+            <legend> Daten zur Website die erstellt werden soll </legend>
+            <div class="row">
+                <div class="col" style="max-height: 150px;">
+                    <label for="name3"> Firmename</label>
+                    <input type="text" name="name3" id="name3" value="Firmename">
+                    <div> 
+                        <label for="image"> Logo</label>     
+                        <input type="file" name="image" id="image" accept="image/*"> 
+                    </div>
+                    <div>
+                        <label for="bg"> Hintergrund</label> 
+                        <input type="color" name="bg" id="bg">
+                    </div>
+                    <input type="checkbox" name="personal" id="personal"> Zeige persönliche Infos 
+                </div>
+                <div class="col">
+                    <textarea name="websitetext" id="websitetext" cols="30" rows="10" style="width: 100%; max-height: 30%;">
+Text schreiben, der auf der Website angezeigt werden soll.</textarea>
+                    <button type="button" id="send" >Abschicken</button>
+                </div>
+            </div>
+        </fieldset> 
+    </form>
+    <div class="container" id="preview">
+    Vorschau der Website
+        <br>
+        <div class="row">
+            <div class="col-5">
+                <img src="src/doggy.jpg" alt="Bild" id="imagepreview" height="150px">
+            </div>
+            <div class="col">
+                <h1 id="name3preview">
+                    
+                </h1>
+                <p id="text2preview">
+             
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <p id="textpreview">
+                    
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+ 	</body>
+ </html>

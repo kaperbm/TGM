@@ -1,0 +1,100 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header {
+   position:fixed;
+   width: 100%;
+}
+.king {
+  width: 100%;
+  height: 100px;
+  background-color:black;
+  margin: 0px;
+  word-spacing: 20px;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+}
+.bild {
+  width: 100%;
+  height:650px;
+}
+.Nathan {
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+ color: orange;
+ float: left;
+}
+.Lionel {
+  text-align: center;
+  width: 100px;
+  line-height: 50px;
+  color: orange;
+  float: left;
+}
+.Manuel {
+  width: 150px;
+  color: orange;
+  line-height: 50px;
+  float: left;
+}
+.Enes {
+  width: 50px;
+  color: orange;
+  line-height: 50px;
+  float: right;
+}
+.lolu {
+  width: 150px;
+  color: orange;
+  line-height: 50px;
+  float: right;
+}
+.Polen {
+  width: 50px;
+  color: orange;
+  line-height: 50px;
+  float: right;
+}
+.herbert {
+  width: 50px;
+  color: orange;
+  line-height: 50px;
+  float: right;
+}
+}
+.amadeus{
+  width: 200px;
+  height: 600px;
+  background-color:white;
+  margin: 0px;
+  word-spacing: 20px;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+}
+.Serbien {
+    width: 100px;
+    color: orange;
+    line-height: 50px;
+    float: right;
+}
+fieldset{
+  background-color: white;
+
+}
+legend{
+  background-color: white;
+}
+button {
+  background-color: white;
+  width: 95%;
+  height: 50px;
+}

@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset {
+    border:3px solid black;
+}
+
+#preview{
+    max-width: 1450px;
+    margin: 3%;
+    max-height: 300px;
+    border: 3px solid black;
+}
+form{
+    margin: 3%;
+    max-height: 380px;
+}

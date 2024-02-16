@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacper Bohaczyk</title>
+</head>
+<body>
+    <script>
+        alert("Kacper Bohaczyk");
+let foo="kbohaczyk";
+let bar=foo;
+alert(bar);
+let inp = prompt('Geben Sie einen Text ein ','');
+inp = Number(inp);
+alert(inp);
+
+let alter = prompt('Wie alt sind Sie?','');
+if(alter < 0 ) {
+    console.log('“Falsche Eingabe')
+}
+ if (alter < 13) {
+ console.log('Sie sind ein Kind');
+ } else if (alter <= 19) {
+ console.log('Sie sind ein Teenager.')
+ } else {
+ console.log('Sie sind erwachsen.')
+ if(alter > 25) {
+ console.log('Sie sind alt.')
+ }
+}
+ let i = 1;
+  let resultat = 1;
+  while (i <= 5) {
+  resultat = resultat * i;
+  i++;
+  }
+  console.log(resultat);
+  let inp2 = prompt('Geben sie eine Zahl ein','');
+  let nulo =  0;
+  let zaehler = 0;
+  while(nulo < inp2) {
+      nulo++;
+    zaehler = zaehler + nulo;
+  }
+  console.log(zaehler);
+  var fibonacci = [];
+fibonacci[0] = 0;
+fibonacci[1] = 1;
+var x = 2;
+var number = prompt('Geben sie eine Zahl ein','');
+while(x < number) {
+  fibonacci[x] = fibonacci[x - 2] + fibonacci[x - 1];
+  x++;
+}
+console.log(fibonacci);
+
+ let resultat1 = 1;
+ for (let i = 1;i <= 5; i++) {
+ resultat1 = resultat1 * i;
+ }
+ console.log(resultat1);
+    </script>
+    
+</body>
+</html>
