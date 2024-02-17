@@ -1,5 +1,5 @@
 # TGM Schulzeit-Aufgaben
-Willkommen zu meinem GitHub-Repository! Hier könnt ihr alle technischen Aufgaben finden, die ich während meiner Schulzeit am TGM absolviert habe.
+Willkommen zu meinem GitHub-Repository! Hier könnt ihr Aufgaben aller technischen Gentstände finden, die ich während meiner Schulzeit am TGM absolviert habe.Zusätzlich finden Sie auch die Unterlagen zur Matematik, da ich sie als technishc relevant empfinde.
 
 ## Überblick
 In diesem Repository sind meine schulischen Projekte und Aufgaben gesammelt. Ihr könnt durch die verschiedenen Verzeichnisse navigieren, um einen Einblick in meine Lernfortschritte und Fähigkeiten zu bekommen.
