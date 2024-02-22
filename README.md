@@ -4,17 +4,16 @@ Willkommen zu meinem GitHub-Repository! Hier könnt ihr Aufgaben aller technisch
 ## Überblick
 In diesem Repository sind meine schulischen Projekte und Aufgaben gesammelt. Ihr könnt durch die verschiedenen Verzeichnisse navigieren, um einen Einblick in meine Lernfortschritte und Fähigkeiten zu bekommen.
 
-- **SEW**  In diesem Verzeichniss findet ihr alles rundherum um das Fach "Softwareentwicklung"
-- **SYT**  In diesem Verzeichniss findet ihr alles rundherum um das Fach "Systemtechnik"
-- **INSY** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **SEW**  In diesem Verzeichniss findet ihr alles rund um das Fach "Softwareentwicklung"
+- **SYT**  In diesem Verzeichniss findet ihr alles rund um das Fach "Systemtechnik"
+- **INSY** In diesem Verzeichniss findet ihr alles rund um das Fach
 "Informationssysteme"
-- **MEDT** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **MEDT** In diesem Verzeichniss findet ihr alles rund um das Fach
 "Mediendesign"
-- **ITSI** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **ITSI** In diesem Verzeichniss findet ihr alles rund um das Fach
 "IT-Sicherheit"
-- **ITP**  In diesem Verzeichniss findet ihr alles rundherum um das Fach
-"Informationstechnische Projekte"
-- **WIRE** In diesem Verzeichniss findet ihr alles rundherum um das Fach
+- **ITP**  In diesem Verzeichnis findet ihr alles rund um das Fach "Informationstechnische Projekte". Dabei gibt es zahlreiche Verzweigungen zu anderen Fachbereichen aufgrund des individuellen Projekts, der Zusammenarbeit mit der Medizinischen Universität Wien und der Diplomarbeit.
+- **WIRE** In diesem Verzeichniss findet ihr alles rund um das Fach
 "Wirtschaft und Recht"
 
 
